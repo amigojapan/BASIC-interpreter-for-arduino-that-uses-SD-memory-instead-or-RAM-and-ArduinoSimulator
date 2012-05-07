@@ -1,32 +1,33 @@
 SDmemBASIC_Simulator_For_Linux.cpp: In function ‘char* freeMemory()’:
-SDmemBASIC_Simulator_For_Linux.cpp:9: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:11: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp: At global scope:
+SDmemBASIC_Simulator_For_Linux.cpp:35: error: expected constructor, destructor, or type conversion before ‘(’ token
+SDmemBASIC_Simulator_For_Linux.cpp: In function ‘int rand2(unsigned int, unsigned int)’:
+SDmemBASIC_Simulator_For_Linux.cpp:39: error: ‘random_in_range’ was not declared in this scope
+SDmemBASIC_Simulator_For_Linux.cpp:49: error: ‘random_in_range’ was not declared in this scope
 SDmemBASIC_Simulator_For_Linux.cpp: In function ‘void AddLine(char, char*)’:
-SDmemBASIC_Simulator_For_Linux.cpp:184: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:206: warning: deprecated conversion from string constant to ‘char*’
 SDmemBASIC_Simulator_For_Linux.cpp: In function ‘void editln()’:
-SDmemBASIC_Simulator_For_Linux.cpp:267: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:268: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:293: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:294: warning: deprecated conversion from string constant to ‘char*’
 SDmemBASIC_Simulator_For_Linux.cpp: In function ‘int debug()’:
-SDmemBASIC_Simulator_For_Linux.cpp:298: warning: format ‘%s’ expects type ‘char*’, but argument 3 has type ‘int’
+SDmemBASIC_Simulator_For_Linux.cpp:324: warning: format ‘%s’ expects type ‘char*’, but argument 3 has type ‘int’
 SDmemBASIC_Simulator_For_Linux.cpp: In function ‘void setup()’:
-SDmemBASIC_Simulator_For_Linux.cpp:435: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:461: warning: deprecated conversion from string constant to ‘char*’
 SDmemBASIC_Simulator_For_Linux.cpp: In function ‘void loop()’:
-SDmemBASIC_Simulator_For_Linux.cpp:454: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:462: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:481: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:498: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:530: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:541: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:582: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:598: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:605: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:608: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:620: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp: In function ‘void printWelcome()’:
-SDmemBASIC_Simulator_For_Linux.cpp:645: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:646: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:647: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:648: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:480: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:488: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:507: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:566: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:577: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:642: warning: deprecated conversion from string constant to ‘char*’
 SDmemBASIC_Simulator_For_Linux.cpp:649: warning: deprecated conversion from string constant to ‘char*’
-SDmemBASIC_Simulator_For_Linux.cpp:650: warning: deprecated conversion from string constant to ‘char*’
-/tmp/ccRl9r9P.o: In function `loop()':
-/home/a/SDmemBASIC/SDmemBASIC_Simulator_For_Linux.cpp:457: warning: the `gets' function is dangerous and should not be used.
+SDmemBASIC_Simulator_For_Linux.cpp:652: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:664: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp: In function ‘void printWelcome()’:
+SDmemBASIC_Simulator_For_Linux.cpp:689: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:690: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:691: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:692: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:693: warning: deprecated conversion from string constant to ‘char*’
+SDmemBASIC_Simulator_For_Linux.cpp:694: warning: deprecated conversion from string constant to ‘char*’

@@ -501,7 +501,7 @@ void loop() {
                                             }
                                       }
                                       if(OneLine[0]=='I' && OneLine[1]=='N') {//if it is INPUT
-                                            Serial.print("\r\nINPUT NUMBER:\r\n");
+                                            //Serial.print("\r\nINPUT NUMBER:\r\n");
 										    #ifdef __linux__
 											 	 gets(buf);
 										    #else
@@ -523,7 +523,17 @@ void loop() {
                                       } 
                                       */     
                                       if(OneLine[1]=='=') {//assignment
-                                            p=OneLine+2, var[*OneLine]=eqexp();p=OneLine+2, var[*OneLine]=eqexp();
+                                            if(OneLine[2]=='R' && OneLine[3]=='N'){//var=RND, you must set X to the minimum number first then Y to the maximum number: example 10 X=10 20 Y=20 30 N=RND  now N will contain a value between 10 and 20
+                                                  #ifdef __linux__
+                                                  		var[OneLine[0]]=1;//must implement this on linux well
+                                                  #else
+                                                  		var[OneLine[0]]=random(var['X'], var['Y']);
+                                                  #endif
+												  continue;                                                  
+                                            } else {//just assign
+                                                  p=OneLine+2, var[*OneLine]=eqexp();p=OneLine+2, var[*OneLine]=eqexp();
+                                                  continue;
+                                            }
                                       }
                                       switch(OneLine[0]) {
                                             case 'E':        // END 
