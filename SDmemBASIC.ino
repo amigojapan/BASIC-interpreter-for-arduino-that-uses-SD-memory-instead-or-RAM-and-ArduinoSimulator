@@ -49,7 +49,7 @@
 
 
 int ProgNum=0;
-char NumberOfLines=0;
+unsigned char NumberOfLines=0;
 #define LineLength 30//I made this small because o the limit in arudino memory
 //warning this is because of the limit of the size of char which we will use to store ln, we may change it later
 #define LineCount 250
@@ -97,7 +97,7 @@ void writeString (int offset, char str[], int len) {
 }
 
 
-void set_ln(char RealLineNumber, char SDPointer) {
+void set_ln(unsigned char RealLineNumber, unsigned char SDPointer) {
 	tempbytes[0]=SDPointer;
 	unsigned long offset;
 	offset=(unsigned long) ln0offset+(LineCount*ProgNum)+RealLineNumber;
@@ -105,7 +105,7 @@ void set_ln(char RealLineNumber, char SDPointer) {
         sd_raw_sync();
 }
 
-char get_ln(char RealLineNumber) {
+char get_ln(unsigned char RealLineNumber) {
         unsigned long offset;
 	offset=(unsigned long) ln0offset+(LineCount*ProgNum)+RealLineNumber;
         sd_raw_read(offset,tempbytes,1);//it seems this read fails
@@ -172,8 +172,8 @@ char * string_repeat( int n, const char * s ) {
 }
 */
 
-void AddLine(char RealLineNumber, char str[]) {
-        char SDPointer=get_ln(RealLineNumber);//this seems to conflict with the var[0]=0; inside loop()
+void AddLine(unsigned char RealLineNumber, char str[]) {
+        unsigned char SDPointer=get_ln(RealLineNumber);//this seems to conflict with the var[0]=0; inside loop()
         //char SDPointer=0;//this works, so it is probably something inside get_ln();
         //Serial.print("here7");
          
@@ -203,8 +203,8 @@ void AddLine(char RealLineNumber, char str[]) {
 	writeString(offset,OneLine,LineLength);
  */      
 }
-void  get_Line(char *p, char RealLineNumber) {
-	char SDPointer=get_ln(RealLineNumber);
+void  get_Line(char *p, unsigned char RealLineNumber) {
+	unsigned char SDPointer=get_ln(RealLineNumber);
 	unsigned long offset;		
 	if(SDPointer==0) {
 		//*p='\0';
@@ -218,8 +218,8 @@ void  get_Line(char *p, char RealLineNumber) {
         //Serial.print(p);
 }
 
-void  get_Line2(char RealLineNumber) {
-	char SDPointer=get_ln(RealLineNumber);
+void  get_Line2(unsigned char RealLineNumber) {
+	unsigned char SDPointer=get_ln(RealLineNumber);
 	unsigned long offset;		
 	if(SDPointer==0) {
 		//*p='\0';
